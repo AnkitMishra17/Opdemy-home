@@ -332,7 +332,12 @@ p{
   .logo-big-screen{
     display: none;
   }
- 
+.educator-info{
+  height: 500px;
+} 
+.mentor-info{
+  height: 600px;
+}
   .dropdown-menu{
     width: 100vw;
     overflow: scroll;
