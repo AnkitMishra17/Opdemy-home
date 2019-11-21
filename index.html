@@ -28,6 +28,7 @@
         height: 100%;
         width: 100%;
         background-image: linear-gradient(45deg, #2ed573 0,#dfe4ea 100%);
+        opacity: 0.85;
       }
     </style>
 <body>  
@@ -43,7 +44,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
                 <ul class="navbar-nav mr-auto">
                     <div class="dropdown p-2">
-                      <button class="btn btn-block courses-btn w-100 px-2 fontcolor rounded dropdown-toggle" type="button" data-toggle="dropdown">
+                      <button class="btn btn-block courses-btn w-100 pr-2 ml-auto fontcolor rounded dropdown-toggle" type="button" data-toggle="dropdown">
                           Courses
                         <span class="caret"></span>
                       </button>
@@ -90,28 +91,35 @@
                         </ul>
                       </div>
                 </ul>
-                
-                <a class="navbar-brand d-flex align-self-center " href="#"><img src="./logo.png" class="nav-logo logo-big-screen" alt=""></a>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <input class="form-control p-4 px-5 search-bar" type="text" placeholder="Search">
+                        <div class="input-group-append">
+                            <button class="fontcolor text-dark font-weight-bold my-sm-0 search-button"  type="submit">Search</button>
+                        </div>
+                      </div>
+                </form>
+                <a class="navbar-brand d-flex align-self-center ml-auto" href="#"><img src="./logo.png" class="nav-logo logo-big-screen" alt=""></a>
                 <ul class="navbar-nav ml-auto">
-                      <li class="nav-item ">
-                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Sathi</a>
-                        <hr class="my-sm-1">
+                      <li class="nav-item">
+                        <a class=" nav-link px-1 fontcolor text-dark font-weight-bold" href="#">Sathi</a>
+                        <hr class="my-sm-1 w-100" color="#16c892" style="opacity: 0.5; height: 0.8px;">
                       </li>
                       <li class="nav-item">
-                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Daily MCQ's</a>
-                        <hr class="my-sm-1">
+                        <a class=" nav-link px-1 fontcolor text-dark font-weight-bold" href="#">Daily MCQ's</a>
+                        <hr class="my-sm-1 w-100" color="#16c892" style="opacity: 0.5; height: 0.8px;">
                       </li>
                       <li class="nav-item">
-                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Careers</a>
-                        <hr class="my-sm-1">
+                        <a class=" nav-link px-1 fontcolor text-dark font-weight-bold" href="#">Careers</a>
+                        <hr class="my-sm-1 w-100" color="#16c892" style="opacity: 0.5; height: 0.8px;">
                       </li>
                       <li class="nav-item">
-                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Login</a>
-                        <hr class="my-sm-1">
+                        <a class=" nav-link px-1 fontcolor text-dark font-weight-bold" href="#">Login</a>
+                        <hr class="my-sm-1 w-100" color="#16c892" style="opacity: 0.5; height: 0.8px;">
                       </li>
                       <li class="nav-item">
-                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Sign Up</a>
-                        <hr class="my-sm-1">
+                        <a class=" nav-link px-1 fontcolor text-dark font-weight-bold" href="#">Sign Up</a>
+                        <hr class="my-sm-1 w-100" color="#16c892" style="opacity: 0.5; height: 0.8px;">
                       </li>
                 </ul>
               </div>
@@ -119,13 +127,13 @@
       <div class="clip-img">
 
       </div>
-    <div class="row d-flex justify-content-around px-4 landing-view" >
-      <div class="col-md-5 d-flex flex-column justify-content-center">
+    <div class="row d-flex justify-content-around px-4 pb-lg-5 pb-sm-0 landing-view" >
+      <div class="col-md-6 d-flex flex-column justify-content-center">
         <a href="./https://www.opdemy.com/program/aarambh">
-          <img src="./aarambh1.jpg" alt=""style="box-shadow: none;height: auto; width: 95%;">
+          <img src="./aarambh1.jpg" alt=""style="box-shadow: 0px 0px 12px 0 rgba(72,94,116,0.3);height: auto; width: 95%;">
         </a>
       </div>
-      <div class="col-md-5 d-flex flex-column justify-content-center mb-5" >
+      <div class="col-md-4 d-flex flex-column justify-content-center mb-5" >
           <p class="font-weight-bold overlay" style="font-family: 'Raleway', sans-serif; color: #16c892; text-shadow: 2px 2px 5px rgba(72,94,116,0.5);">
             Join the fastest growing E-Learning platform in India
           </p>
@@ -134,12 +142,12 @@
               <a href="/" class="btn w-50 fontcolor" style="border-radius:5px;">For Educators</a>    
           </div>
       </div>
+    </div>
+    <div class="text-center" style="position: relative; top: -190px;">
+        <a data-scroll href="#second-section">
+          <img src="./sort-down.png" alt="" class="anchor-down">
+        </a>
     </div> 
-  </div>
-  <div class="text-center" style="margin-top: -10vw;">
-      <a data-scroll href="#second-section">
-        <img src="./sort-down.png" alt="" class="anchor-down">
-      </a>
   </div>
   <div class="mt-5 p-2" id="second-section" data-aos="fade-up">
     <div class="mt-5 section-2">
@@ -172,7 +180,7 @@
   <div class="mt-5 section-3">
     <div class="slick m-5">
       <div class="card course-card mt-3">
-          <h3 class="card-header text-center fontcolor">Aarambh</h3>
+          <h3 class="card-header text-center fontcolor">Aarambh - UPSC CSE Beginners orientation Program </h3>
           <img style="height: 200px; width: 100%; box-shadow: none; border-radius: 0px; display: block;" src="./aarambh.jpeg" alt="Card image">
           <hr class="my-2">
           <div class="card-body sathi-11">
@@ -187,7 +195,7 @@
           </div>
       </div>
       <div class="card course-card mt-3">
-          <h3 class="card-header text-center fontcolor">Aadhar</h3>
+          <h3 class="card-header text-center fontcolor">Aadhar - UPSC CSE mains Answer writing cum guidance program</h3>
           <img style="height: 200px; width: 100%; box-shadow: none; border-radius: 0px; display: block;" src="./aadhar.jpeg" alt="Card image">
           <hr class="my-2">
           <div class="card-body sathi-1">
@@ -202,7 +210,7 @@
           </div>
       </div>
       <div class="card course-card mt-3">
-          <h3 class="card-header text-center fontcolor">Daksh</h3>
+          <h3 class="card-header text-center fontcolor">Daksh - English Language Programme</h3>
           <img style="height: 200px; width: 100%; box-shadow: none; border-radius: 0px; display: block;" src="./daksh.jpeg" alt="Card image">
           <hr class="my-2">
           <div class="card-body sathi-11">
@@ -217,7 +225,7 @@
           </div>
       </div>
       <div class="card course-card mt-3">
-          <h3 class="card-header text-center fontcolor">Yogya</h3>
+          <h3 class="card-header text-center fontcolor">Yogya - Ethics guidance Program</h3>
           <img style="height: 200px; width: 100%; box-shadow: none; border-radius: 0px; display: block;" src="./yogya.jpeg" alt="Card image">
           <hr class="my-2">
           <div class="card-body  sathi-1">
@@ -232,7 +240,7 @@
           </div>
       </div>  
       <div class="card course-card mt-3">
-          <h3 class="card-header text-center fontcolor">Siddha</h3>
+          <h3 class="card-header text-center fontcolor">Siddha - UPSC CSE Pre cum Mains Integrated Guidance program</h3>
           <img style="height: 200px; width: 100%; box-shadow: none; border-radius: 0px; display: block;" src="./siddha.jpeg" alt="Card image">
           <hr class="my-2">
           <div class="card-body sathi-11">
@@ -247,7 +255,7 @@
           </div>
         </div>
         <div class="card course-card mt-3 ">
-            <h3 class="card-header text-center fontcolor">Vishishta</h3>
+            <h3 class="card-header text-center fontcolor">Vishishta - Optional subjects Guidance Program</h3>
             <img style="height: 200px; width: 100%; box-shadow: none; border-radius: 0px; display: block;" src="./vashistha.jpeg" alt="Card image">
             <hr class="my-2">
             <div class="card-body sathi-1">
@@ -262,7 +270,7 @@
             </div>
           </div>
           <div class="card course-card mt-3 ">
-              <h3 class="card-header text-center fontcolor">Lekhan</h3>
+              <h3 class="card-header text-center fontcolor">Lekhan - Essay Guidance Program</h3>
               <img style="height: 200px; width: 100%; box-shadow: none; border-radius: 0px; display: block;" src="./lekhan.jpg" alt="Card image">
               <hr class="my-2">
               <div class="card-body sathi-11">
@@ -285,7 +293,9 @@
     </h1>
     <div class="row mt-5 p-2 d-flex justify-content-center box sathi-11">
       <div class="col-md-4 mt-4 d-flex justify-content-center">
-        <img src="./siddha.jpeg" alt="success" class="d-flex align-self-center">
+          <div class="image-card rounded-circle">
+              <img src="./siddha.jpeg" alt="success" class="d-flex align-self-center rounded-circle">
+          </div>
       </div>
       <div class="col-md-6 mt-4">
         
@@ -306,7 +316,9 @@
     </h1>
     <div class="row mt-5 p-2 d-flex justify-content-center box sathi-11" data-aos="flip-down">
       <div class="col-md-4 mt-5 d-flex  justify-content-center ">
-        <img src="./vashistha.jpeg" class="d-flex align-self-center" alt="success">
+        <div class="image-card rounded-circle">
+          <img src="./vashistha.jpeg" class="d-flex align-self-center rounded-circle" alt="success">
+        </div>
       </div>
       <div class="col-md-8 mt-4">
         
@@ -330,7 +342,7 @@
     <div class="p-2" data-aos="zoom-in-up">
         <div class="mt-5 ">
           <h1 class="text-center p-2" style="text-shadow: 2px 2px 5px rgba(72,94,116,0.5);">
-              OUR MENTORS
+            “WHATS SPECIAL ABOUT OPDEMY” 
           </h1>
           <div class="mentor-tab mx-4">
             <div class="card mentor-card d-flex align-content-inline mt-3">
@@ -463,9 +475,11 @@
     <h1 class="text-center p-2 mt-5" style="text-shadow: 2px 2px 5px rgba(72,94,116,0.5); text-transform: uppercase;">
         Our Social Initiative
     </h1>
-    <div class="row mt-5 p-2 d-flex justify-content-center box sathi-1" data-aos="fade-up">
-        <div class="col-md-4 mt-5 d-flex  justify-content-center ">
-          <img src="./guru1.jpeg" class="d-flex align-self-center rounded-circle" alt="success">
+    <div class="row mt-5 p-3 py-4 d-flex justify-content-center box sathi-1" data-aos="fade-up">
+        <div class="col-md-4 my-auto d-flex  justify-content-center ">
+          <div class="image-card rounded-circle p-2">
+              <img src="./guru1.jpeg" class="d-flex p-5 align-self-center rounded-circle" alt="success">  
+          </div>
         </div>
         <div class="col-md-6 mt-4">
           
@@ -478,9 +492,11 @@
             <a href="#" class="card-link fontcolor btn m-4 w-50" style="padding: 11px; border-radius: 5px;">Read More</a>
         </div>
     </div>
-    <div class="row mt-5 p-2 d-flex justify-content-center box sathi-1">
-        <div class="col-md-4 mt-5 d-flex  justify-content-center ">
-          <img src="./sathi.jpg" class="d-flex align-self-center" style="border-radius: 40%;" alt="success">
+    <div class="row mt-5 p-3 py-4 d-flex justify-content-center box sathi-1">
+        <div class="col-md-4 my-auto d-flex  justify-content-center ">
+            <div class="image-card rounded-circle p-2"> 
+                <img src="./sathi.jpg" class="d-flex p-5 align-self-center rounded-circle" alt="success">
+            </div>
         </div>
         <div class="col-md-6 mt-4">
           
@@ -688,6 +704,7 @@
             <a href="#" class="twitter footerfont mx-3"> <i class="fab fa-twitter fa-3x"></i></a>
             <a href="#" class="youtube footerfont mx-3"><i class="fab fa-youtube fa-3x"></i></a>
             <a href="#" class="instagram footerfont mx-3"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="#" class="telegram footerfont mx-3"><i class="fab fa-telegram fa-3x"></i></a>
   
           </div>
         </div>

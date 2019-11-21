@@ -48,7 +48,7 @@ img{
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.5);
 }
 .image-card img {
     transition: all 0.3s;
@@ -62,7 +62,7 @@ img{
 .overlay{
     color: black;
     font-family: 'Jomolhari', serif;
-    font-size: 46px;
+    font-size: 34px;
     color:#2ecc72;
 }
 .footer{
@@ -102,12 +102,16 @@ p{
     height: 80px;
     width: 80px;
     z-index: 10;
-    margin-top: 50px;
     color: #16c892;
     box-shadow: none;
 }
 .nav-link{
     color: black;
+}
+
+.nav-item:hover .nav-link{
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 .nav-item:focus{
   transition: 0.3s;
@@ -204,6 +208,26 @@ p{
     width: 30px;
     box-shadow: none;
 }
+.search-bar{
+  border: 2px solid #16c892;
+  border-radius: 25px;
+}
+.search-bar:focus, .search-bar:active{
+  box-shadow: 0 0 2pt 2pt #90F9C4;
+  border: 2px solid #16c892;
+  border-radius: 25px;
+}
+.search-button{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 2px solid #16c892;
+  background-color: #16c892;
+  text-transform: capitalize;
+}
+.search-button:focus{
+  outline: none;
+  box-shadow: 0 0 2pt 2pt #90F9C4;
+}
 .slick-prev:before, .slick-next:before{
     color:#16c892;
     font-size: 25px;
@@ -265,8 +289,8 @@ p{
   }
   
 .nav-logo{
-  height: 70px;
-  width: 200px; 
+  height: 60px;
+  width: 160px; 
   box-shadow: none;
 }
 /* .dropdown-submenu {
@@ -562,6 +586,10 @@ p{
 .instagram:hover
 {
   color:rgb(228, 64, 95);
+}
+.telegram:hover
+{
+  color:#0088cc;
 }
 .youtube:hover
 {
