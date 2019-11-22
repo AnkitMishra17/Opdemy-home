@@ -267,7 +267,7 @@ p{
     animation: educator-card 4s infinite;
 }
 .mentor-card:hover .clip{
-    animation: mentor-card 4s infinite;
+    animation: mentor-card 5s infinite;
 }
 @keyframes arrow {
   0% {
@@ -301,11 +301,17 @@ p{
     0% {
         clip-path: circle(25.0% at 0 50%);
     }
-    50% {
+    25% {
       clip-path: circle(40.0% at 50% 50%);
     }
-    100%{
+    50%{
         clip-path: circle(25.0% at 100% 50%);
+    }
+    75% {
+      clip-path: circle(40.0% at 50% 50%);
+    }
+    100% {
+      clip-path: circle(25.0% at 0 50%);
     }
   }
   
@@ -394,7 +400,7 @@ p{
   height: 600px;
 }
 .course-card{
-  height: 630px;
+  height: 730px;
 }
 .dropdown-submenu {
   position: relative;
