@@ -59,6 +59,21 @@ img{
 .image-card:hover img {
     transform: scale(1.25);
 }
+.image-student-card{
+  position: relative;
+  margin: auto;
+  overflow: visible;
+  border-radius: 50%;
+}
+.image-student-card img {
+  transition: all 0.3s;
+  display: block;
+  height: auto;
+  transform: scale(1);
+}
+.image-student-card:hover img {
+  transform: scale(1.15);
+}
 .overlay{
     color: black;
     font-family: 'Jomolhari', serif;
@@ -143,6 +158,10 @@ p{
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%);
+}
+.section-4{
+  position: relative;
+  background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%);
 }
 .section-3:before {
     content: '';
@@ -232,6 +251,7 @@ p{
     color:#16c892;
     font-size: 25px;
   }
+  
 .clip{
     height: 100%;
     width: 75%; 
@@ -242,6 +262,7 @@ p{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 .educator-card:hover .clip{
     animation: educator-card 4s infinite;
 }
@@ -293,65 +314,64 @@ p{
   width: 160px; 
   box-shadow: none;
 }
-/* .dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu>.dropdown-menu {
-  top: 100%;
-  margin-top: -25px;
-  margin-left: 15.4vw;
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px;
-  border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-
-.dropdown-submenu:focus>.dropdown-menu {
-  display: block;
-}
-
-.dropdown-submenu:hover>a:after {
-  border-left-color: #fff;
-}
-.dropdown-submenu:focus>a:after {
-  border-left-color: #fff;
-}
-
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #ccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-
-.dropdown-submenu.pull-left {
-  float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-  -moz-border-radius: 6px 0 6px 6px;
-  border-radius: 6px 0 6px 6px;
-} */
-
-
-
 .logo-mobile{
   display: none;
 }
+
+.avatar{
+  position: relative;
+  top: -50px;
+  height: 200px;
+  width: 200px;
+  border: 3px solid #16c892;
+  box-shadow: none;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.8);
+  border-radius: 50%;
+  display: block;
+}
+.clip-student{
+  position: absolute;
+  clip-path: circle(40% at 50% 0);
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(45deg, #16c892 0%, #D7FFFE 100%);
+  opacity: 0.5;
+  z-index: -5;
+}
+.student-card{
+  border: 2px solid #7CEC9F;
+  border-top:none;
+  border-radius: 10px;
+  height: 630px;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.4);
+  transform: scale(0.95);
+  max-width: 300px;
+}
+.student-card:hover{
+  transform: scale(0.94);
+  transition: 0.3s ease-in-out;
+}
+.student-card:hover .clip-student{    
+  animation: student-card 4s infinite;
+}
+@keyframes student-card {
+  0%{
+      clip-path: circle(40% at 50% 0);
+  }
+  25% {
+    clip-path: circle(0.0% at 50% 60%);
+  }
+  50%{
+      clip-path: circle(0.0% at 50% 60%);
+  }
+  75% {
+    clip-path: circle(0.0% at 50% 60%);
+  }
+  100%{
+    clip-path: circle(40% at 50% 0);
+  }
+}
+
 @media only screen and (max-width: 768px){
 
   .nav-logo{
